@@ -1,0 +1,12 @@
+header {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    color: $textcolor;
+    button {
+        background: $primaryBtn;
+        &:hover {
+            background: green;
+        }
+    }
+}
