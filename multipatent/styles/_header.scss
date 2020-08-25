@@ -1,0 +1,77 @@
+.inner-container {
+    height: 5vh;
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 2s;
+    padding: 20px 100px;
+    z-index: 10000;
+}
+
+header.sticky {
+    padding: 5px 40px;
+    background: #fff;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    transition: 1s ease-in-out;
+}
+
+header.sticky .logo,
+header.sticky li a {
+    color: #000;
+}
+
+header.sticky .logo {
+    font-weight: 500;
+    transition: 1s ease-in-out;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 1s;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    outline: none;
+    transition: 0.5s;
+}
+
+
