@@ -67,11 +67,12 @@ header ul li a {
     transition: 1s;
 }
 
-a:hover,
-a:focus {
+.a-link:hover,
+.a-link:focus {
     text-decoration: underline;
     outline: none;
     transition: 0.5s;
+    color: orange;
 }
 
 

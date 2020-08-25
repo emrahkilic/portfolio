@@ -85,12 +85,13 @@ header ul li a {
   transition: 1s;
 }
 
-a:hover,
-a:focus {
+.a-link:hover,
+.a-link:focus {
   text-decoration: underline;
   outline: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: orange;
 }
 
 * {
@@ -126,7 +127,7 @@ nav {
 
 .button {
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 10px 10px;
   cursor: pointer;
   background-color: blue;
@@ -135,5 +136,9 @@ nav {
   text-align: center;
   color: white;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */

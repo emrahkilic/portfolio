@@ -28,7 +28,7 @@ nav {
 
 .button {
         border:none;
-        border-radius: 5px;
+        border-radius: 20px;
         padding: 10px 10px;
         cursor: pointer;
         background-color: blue;
@@ -36,4 +36,8 @@ nav {
         text-align: center;
         color: white;
         text-decoration: none;;
+}
+
+.button:hover {
+    background-color:black;
 }
