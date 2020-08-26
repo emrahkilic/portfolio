@@ -10,6 +10,47 @@
     position: relative;
 }
 
+nav {
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button {
+    border:none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: blue;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    text-decoration: none;;
+}
+
+.button:hover {
+    background-color:black;
+}
+
+
+.nav-links li.close {
+    display: none;
+    font-size: 36px;
+    color: #646464;
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+
+
 header {
     position: fixed;
     top: 0;

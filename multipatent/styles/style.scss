@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./header";
+@import "./mobile";
 
 
 * {
@@ -10,34 +11,10 @@
 }
 
 body {
-    background: rgb(12, 0, 0);
+    background: rgb(45, 231, 28);
     min-height: 200vh;    
 }
 
-nav {
-    width: 100%;
-}
 
   /* ANOTHER STYLING STARTS HERE*/
 
-  .nav-menu {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }
-
-.button {
-        border:none;
-        border-radius: 20px;
-        padding: 10px 10px;
-        cursor: pointer;
-        background-color: blue;
-        box-sizing: border-box;
-        text-align: center;
-        color: white;
-        text-decoration: none;;
-}
-
-.button:hover {
-    background-color:black;
-}
