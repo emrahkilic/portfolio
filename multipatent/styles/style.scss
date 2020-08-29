@@ -1,9 +1,9 @@
 @import "./variables";
-@import "./header";
 @import "./mobile";
 
 
 * {
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,10 +11,127 @@
 }
 
 body {
-    background: rgb(45, 231, 28);
+    width: 100%;
+    background: rgb(93, 121, 90);
     min-height: 200vh;    
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 2s;
+    padding: 30px 50px;
+    z-index: 10000;
 
-  /* ANOTHER STYLING STARTS HERE*/
+}
+
+header.sticky {
+    padding: 10px 10px;
+    background: #fff;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    transition: 1s ease-in-out;
+}
+
+header.sticky .logo,
+header.sticky li a {
+    color: #000;
+}
+
+header.sticky .logo {
+    font-weight: 500;
+    transition: 1s ease-in-out;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1   px;
+    font-weight: 500;
+    transition: 1s;
+}
+
+
+.inner-container {
+    height: 5vh;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    position: relative;
+    background: green;
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button {
+    border:none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: blue;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color:black;
+}
+
+
+.nav-links li.close {
+    display: none;
+    font-size: 36px;
+    color: #646464;
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+
+
+.a-link:hover,
+.a-link:focus {
+    text-decoration: underline;
+    outline: none;
+    transition: 0.5s;
+    color: orange;
+}
+
+
 
